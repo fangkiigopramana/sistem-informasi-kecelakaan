@@ -28,67 +28,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Admin Page</div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Kelola data
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="data-kecelakaan.php">
-                    <span>Data Kecelakaan</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="data-pemicu.php">
-                    <span>Data Pemicu</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="data-penanganan.php">
-                    <span>Data Penanganan</span>
-                </a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="../index.php">
-                    <button type="button" class="btn btn-danger">Logout</button>
-                </a>
-            </li>
-
-
-        </ul>
+        <?php include 'sidebar.php' ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -121,29 +61,16 @@
                         <table class="table table-striped">
                             <thead class="table-dark">
                                 <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama Daerah</th>
+                                <th scope="col">Jumlah Kecelakaan</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                    <th scope="row">1</th>
+                                    <td>Jawa Tengah</td>
+                                    <td>1234 Kecelakaan</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -159,7 +86,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; 2023</span>
                     </div>
                 </div>
             </footer>
@@ -186,9 +113,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
     <script src="vendor/chart.js/Chart.min.js"></script>
 

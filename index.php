@@ -35,9 +35,9 @@
                         <li class="nav-item"><a class="nav-link" href="#penanganan">Penanganan</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">QnA</a></li>
                     </ul>
-                    <!-- <a href="admin/login.php">
+                    <a href="admin/login.php">
                         <button class="btn btn-outline-light me-2" type="button">Login Admin</button>
-                    </a> -->
+                    </a>
                 </div>
             </div>
         </nav>
@@ -92,7 +92,7 @@
 
         <!-- Statistik section -->
         <?php include 'user/faq.php' ?>
-        
+            
     </main>
 
     <!-- Footer-->

@@ -1,6 +1,6 @@
 <?php
 	//including the database connection file
-	include_once("config.php");
+	include_once("../database/config.php");
 	
 	if(isset($_POST['login'])) {	
     $username = mysqli_real_escape_string($mysqli, $_POST['username']);
@@ -10,7 +10,7 @@
 
     if(mysqli_num_rows($result) > 0){
         echo "<h1>Selamat Datang, ".$username."!</h1>";
-        header("Location: admin.php");	
+        header("Location: index.php");	
     }else{
         header("Location: login.php");
     }
